@@ -1,24 +1,53 @@
 * {
-margin: 0;
-padding: 0;
-}
+  margin: 0;
+  padding: 0;
+  }
+
+  /* Small devices (landscape phones, 576px and up)*/
+  @media (min-width: 576px) {
+    .left-sidebar {
+      width: 100%;
+    }
+    .main-dash {
+      width: 100%;
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up)*/
+  @media (min-width: 768px) {
+    .left-sidebar {
+      width: 100%;
+    }
+    .main-dash {
+      width: 100%;
+    }
+  }
+
+  /* Large devices (desktops, 992px and up)*/
+  @media (min-width: 992px) {
+    .left-sidebar {
+      width: 100%;
+    }
+    .main-dash {
+      width: 100%;
+    }
+  }
 
   body {
     font-family: "Oswald", sans-serif;
     background-color: black;
+    color: #FFFFFF;
   }
 
     .container-fluid {
-      margin: 0;
-      padding: 0;
     }
 
     .top {
+    /*why has this got a black border on left and right?*/
       padding: 20px;
       padding-top: 20px;
+      
       background-color: #0F1419;
-      height: 80px;
-      color: #FFFFFF;
     }
 
     #logo {
@@ -26,11 +55,28 @@ padding: 0;
       padding-bottom: 10px;
     }
 
-    .left-sidebar {
+    #left-sidebar {
       background-color: #2C353E;
+      padding: 20px;
+      padding-left: 20px;
+      height: 100%;
+      border-right: solid 2px grey;
+    }
+
+    #associates {
 
     }
 
-    .main-dashboard {
+    #PO {
+
+    }
+
+    #account {
+
+    }
+
+    #main-dash {
       background-color: #1C2229;
+      padding: 20px;
+      height: 100%;
     }

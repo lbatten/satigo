@@ -1,0 +1,36 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+  body {
+    font-family: "Oswald", sans-serif;
+    background-color: black;
+  }
+
+    .container-fluid {
+      margin: 0;
+      padding: 0;
+    }
+
+    .top {
+      padding: 20px;
+      padding-top: 20px;
+      background-color: #0F1419;
+      height: 80px;
+      color: #FFFFFF;
+    }
+
+    #logo {
+      width: 150px;
+      padding-bottom: 10px;
+    }
+
+    .left-sidebar {
+      background-color: #2C353E;
+
+    }
+
+    .main-dashboard {
+      background-color: #1C2229;
+    }
