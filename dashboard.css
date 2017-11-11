@@ -3,7 +3,8 @@
   padding: 0;
   }
 
-  /* Small devices (landscape phones, 576px and up)*/
+  /* NOT WORKING AT THE MOMENT - HOW DOES THIS WORK?
+  Small devices (landscape phones, 576px and up)
   @media (min-width: 576px) {
     .left-sidebar {
       width: 100%;
@@ -13,7 +14,7 @@
     }
   }
 
-  /* Medium devices (tablets, 768px and up)*/
+  /* Medium devices (tablets, 768px and up)
   @media (min-width: 768px) {
     .left-sidebar {
       width: 100%;
@@ -23,7 +24,7 @@
     }
   }
 
-  /* Large devices (desktops, 992px and up)*/
+  /* Large devices (desktops, 992px and up)
   @media (min-width: 992px) {
     .left-sidebar {
       width: 100%;
@@ -32,6 +33,7 @@
       width: 100%;
     }
   }
+  */
 
   body {
     font-family: "Oswald", sans-serif;
@@ -39,44 +41,111 @@
     color: #FFFFFF;
   }
 
-    .container-fluid {
-    }
+  h4 {
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+  }
+  .container-fluid {
+  }
 
-    .top {
-    /*why has this got a black border on left and right?*/
+  .top {
+  /*why has this got a black border on left and right? - fixed*/
+    margin: 0px -15px;
+    padding: 20px;
+    padding-top: 20px;
+    background-color: #0F1419;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #logo {
+    width: 150px;
+    padding-bottom: 10px;
+  }
+
+  #exit {
+    height: 50px;
+    padding-bottom: 10px;
+  }
+
+  #left-sidebar {
+    background-color: #2C353E;
+    padding: 20px;
+    padding-left: 20px;
+    height: 100%;
+    border-right: solid 2px grey;
+    display: flex;
+    flex-direction: column;
+  }
+
+    .box {
+      border: 2px solid;
+      text-align: center;
+      margin: 20px;
       padding: 20px;
-      padding-top: 20px;
-      
-      background-color: #0F1419;
-    }
-
-    #logo {
-      width: 150px;
-      padding-bottom: 10px;
-    }
-
-    #left-sidebar {
-      background-color: #2C353E;
-      padding: 20px;
-      padding-left: 20px;
-      height: 100%;
-      border-right: solid 2px grey;
-    }
+      }
 
     #associates {
-
+      border-color: #5FB177;
+      color: #5FB177;
     }
 
     #PO {
-
+      margin: 20px;
     }
+
+    table {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .progress {
+      background-color: inherit;
+      border: 1px solid white;
+      border-radius: 0px;
+      height: 30px;
+      width: 100%;
+      margin-bottom: 20px;
+      }
 
     #account {
+      margin: 20px;
+    }
+
+    #acc {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #profile {
+      border-radius: 50%;
+      width: 100px;
+    }
+
+  #main-dash {
+    background-color: #1C2229;
+    padding: 20px;
+    height: 100%;
+  }
+
+  .title {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tt {
+    border: 2px solid #fff;  /* For debugging */
+    padding: 20px;
+    height: 80px;
+    text-align: center;
 
     }
 
-    #main-dash {
-      background-color: #1C2229;
-      padding: 20px;
-      height: 100%;
+    #purchasing {
+      width: 30%;
+    }
+
+    #skills {
+      width: 70%;
     }
