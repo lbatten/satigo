@@ -88,13 +88,88 @@
 
     <!--MAIN DASHBOARD-->
       <div id="main-dash" class="col-lg-9">
-        <div class="title row">
-          <div class="tt col-md-5" >
-            <h1>PURCHASING</h1>
+        <div class="maintitle row">
+          <div class="col-md-4" id="purchasing">
+            <div class="tt"><h1>PURCHASING</h1></div>
+            <!--DATES DROPDOWN-->
+            <form action="/action_page.php">
+              <table>
+              <tr>
+                <td>Dates from: </td>
+                <td>to:</td>
+              </tr>
+              <tr>
+                <td><input type="date" name="from"></td>
+                <td><input type="date" name="to"></td>
+              </tr>
+              <!--BOXES-->
+              <tr>
+                <td>
+                  <div class="box1" id="total"><h1><strong>29 <!--insert data--></strong></h1>
+                    <br> <h5>total associates</h5>
+                  </div>
+                </td>
+                <td>
+                  <div class="box1" id="spent"><h1><strong>£253k <!--insert data--></strong></h1>
+                    <br> <h5>total spent</h5>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            </form>
+
+            <div>
+              <h6>Value</h6>
+              <!--insert bar graph linked to data-->
+
+              <div>
+                <!--insert placeholder image of bar graph-->
+                <img class="bar" src="value.png">
+              </div>
+
+              <h6>Billable days</h6>
+              <!--insert bar graph linked to data-->
+
+              <div>
+                <!--insert placeholder image of bar graph-->
+                <img class="bar" src="billable.png">
+              </div>
+            </div>
+
           </div>
 
-          <div class="tt col-md-7" >
-            <h1>SKILLS</h1>
+          <div class="col-md-8" id="skills">
+            <div class="tt"><h1>SKILLS MATRIX</h1></div>
+            <div class="top-container">
+                <div>
+                  <h6>Skills Usage</h6>
+                  <!--insert placeholder image of bar graph-->
+                  <img class="bar" src="skills.png">
+                </div>
+                <div>
+                  <h6>Where your associates are based</h6>
+                  <!--insert placeholder image of bar graph-->
+                  <img class="bar" src="map.png">
+                </div>
+            </div>
+
+            <div class="bottom-container">
+              <div>
+                <!--insert placeholder image of bar graph-->
+                <img class="graph" src="proj.png">
+              </div>
+              <div>
+                  <div>
+                    <!--insert placeholder image of bar graph-->
+                    <img class="round" src="roles.png">
+                  </div>
+                  <div>
+                    <!--insert placeholder image of bar graph-->
+                    <img class="round" src="forecast.png">
+                  </div>
+            </div>
+            </div>
+
           </div>
         </div>
       </div>

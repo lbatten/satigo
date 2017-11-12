@@ -45,8 +45,6 @@
     border-bottom: 2px solid;
     padding-bottom: 5px;
   }
-  .container-fluid {
-  }
 
   .top {
   /*why has this got a black border on left and right? - fixed*/
@@ -96,7 +94,7 @@
 
     table {
       width: 100%;
-      margin-bottom: 20px;
+      margin: 20px 10px 20px 0px;
     }
 
     .progress {
@@ -128,24 +126,72 @@
     height: 100%;
   }
 
-  .title {
-    width: 900px;
+  .maintitle {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .tt {
-    border: 2px solid #fff;  /* For debugging */
+    border-bottom: 2px solid #fff;
     padding: 20px;
     height: 80px;
     text-align: center;
-
     }
 
     #purchasing {
-      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-right: 2px grey solid;
+    }
+
+    .box1 {
+      border: 2px solid;
+      text-align: center;
+      margin: 10px;
+      padding: 10px;
+
+      }
+
+    #total {
+      border-color: #5695E1;
+      color: #5695E1;
+    }
+
+    #spent {
+      border-color: #EE5F5E;
+      color: #EE5F5E;
+    }
+
+    .bar {
+      width: 380px;
+      margin-bottom: 10px;
     }
 
     #skills {
-      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
+     .top-container {
+       display: flex;
+       flex-direction: row;
+       margin: 20px 0px;
+     }
+
+     .bottom-container {
+       display: flex;
+       flex-direction: row;
+       margin: 20px 0px;
+     }
+
+     .graph {
+       width: 450px;
+       margin-bottom: 10px;
+     }
+
+     .round {
+       height: 150px;
+       margin-bottom: 10px;
+     }
