@@ -166,6 +166,7 @@
     .bar {
       width: 380px;
       margin-bottom: 10px;
+      background-color: #1E2227;
     }
 
     #skills {
@@ -194,4 +195,14 @@
      .round {
        height: 150px;
        margin-bottom: 10px;
+     }
+
+     /*CHARTS STYLING*/
+     #valuebar {
+       width: 100%;
+       height:200px;
+     }
+
+     #billablebar {
+       height:200px;
      }
