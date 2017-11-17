@@ -206,3 +206,10 @@
      #billablebar {
        height:200px;
      }
+
+     #skillsbar {
+       width: 400px;
+       height: 250px;
+       margin-bottom: 10px;
+       background-color: #1E2227;
+     }

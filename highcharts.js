@@ -98,3 +98,51 @@ Highcharts.theme = {
             }
         });
     });
+
+    //SKILLS Usage CHART
+    $(function () {
+      var myChart = Highcharts.chart('skillsbar', {
+            chart: {
+                backgroundColor: '#1D2229',
+                type: 'bar'
+            },
+            title: {
+                text: null
+            },
+            colors: ['#BEBEBE'],
+            xAxis: {
+              categories: ['Project Manager', 'Business Analyst', '.NET developer', 'Sales Consultant', 'Agile Specialist', 'Infrastructure Engineer'],
+              title: {
+                  text: null
+              },
+              labels: {
+                  align: 'right',
+                  style: {
+                      color: 'white',
+                  }
+              }
+            },
+            yAxis: {
+                title: {
+                    text: '# of Days'
+                },
+                tickInterval: 30,
+                endOnTick: false,
+                visible: false
+            },
+            series: [{
+              name: '2017',
+              data: [22, 18, 9, 17, 18, 10],
+              dataLabels: {
+                enabled: true,
+                color: '#fff'
+            }
+            }],
+            legend: {
+              enabled: false
+            },
+            credits: {
+                enabled: false
+            }
+        });
+    });
