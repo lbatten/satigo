@@ -34,7 +34,7 @@ Highcharts.theme = {
               text: null
             },
             xAxis: {
-                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+              categories: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
                 title: {
                     text: 'Month'
                 }
@@ -42,16 +42,21 @@ Highcharts.theme = {
             yAxis: {
                 title: {
                     text: '£ spent'
-                }
+                },
+                tickInterval: 10000,
+                endOnTick: false
             },
             plotOptions: {
             },
             series: [{
                 name: '2017',
-                data: [30000, 40000, 50000, 30000, 40000, 20000, 40000, 60000, 30000, 40000, 50000, 30000]
+                data: [30000, 40500, 50000, 30500, 40000, 20000, 45000, 60000, 30000, 45000, 50000, 30000]
             }],
             legend: {
               enabled: false
+            },
+            credits: {
+                enabled: false
             }
 
         });
@@ -67,8 +72,9 @@ Highcharts.theme = {
             title: {
                 text: null
             },
+            colors: ['#F9D86F' /*yellow*/, '#5695E1' /*blue*/, '#EE5F5E' /*red*/, '#5FB177' /*green*/],
             xAxis: {
-              categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+              categories: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
               title: {
                   text: 'Month'
               }
@@ -76,14 +82,19 @@ Highcharts.theme = {
             yAxis: {
                 title: {
                     text: '# of Days'
-                }
+                },
+                tickInterval: 5,
+                endOnTick: false
             },
             series: [{
-              name: 'Jane',
+              name: '2017',
               data: [19, 22, 15, 17, 24, 11, 17, 19, 22, 24, 12, 18]
             }],
             legend: {
               enabled: false
+            },
+            credits: {
+                enabled: false
             }
         });
     });
